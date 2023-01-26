@@ -1,0 +1,21 @@
+.search {
+  background-color: bisque;
+  min-height: 100vh;
+  text-align: center;
+  input {
+    font-size: 1.5em;
+    margin: 1%;
+  }
+  button {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .search {
+    input,
+    button {
+      font-size: 1em;
+    }
+  }
+}

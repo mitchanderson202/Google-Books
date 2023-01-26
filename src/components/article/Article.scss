@@ -1,0 +1,22 @@
+.article {
+  width: 100vw;
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 2%;
+  p {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .article {
+    height: 14vh;
+    p {
+      font-size: 1em;
+    }
+  }
+}
