@@ -20,7 +20,8 @@ const Display = ({ books }) => {
             {book.volumeInfo.authors && book.volumeInfo.authors.join(", ")}
           </h4>
           <p>
-            {book.volumeInfo.description.length > 1000
+            {book.volumeInfo.description &&
+            book.volumeInfo.description.length > 1000
               ? book.volumeInfo.description.substring(0, 1000) + "..."
               : book.volumeInfo.description}
           </p>

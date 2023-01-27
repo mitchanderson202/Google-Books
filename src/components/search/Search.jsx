@@ -6,7 +6,8 @@ const Search = () => {
   const [query, setQuery] = useState("");
   const [books, setBooks] = useState([]);
 
-  const handleSearch = async () => {
+  const handleSearch = async (e) => {
+    e.preventDefault();
     try {
       const response = await fetch(
         `https://www.googleapis.com/books/v1/volumes?q=${query}`
@@ -20,51 +21,18 @@ const Search = () => {
 
   return (
     <div className="search">
-      <input
-        type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      <button onClick={handleSearch}>Search</button>
+      <form>
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <button onClick={handleSearch}>Search</button>
 
-      <Display books={books} />
+        <Display books={books} />
+      </form>
     </div>
   );
 };
 
 export default Search;
-
-// const Search = () => {
-//   const [query, setQuery] = useState("");
-//   const [books, setBooks] = useState([]);
-//   const [error, setError] = useState(false);
-
-//   const handleSearch = async () => {
-//     try {
-//       const response = await fetch(
-//         `https://www.googleapis.com/books/v1/volumes?q=${query}`
-//       );
-//       const data = await response.json();
-//       setBooks(data.items);
-//     } catch (err) {
-//       setError(true);
-//     }
-//   };
-
-//   return (
-//     <div className="search">
-//       <input
-//         type="text"
-//         value={query}
-//         onChange={(e) => setQuery(e.target.value)}
-//       />
-//       <button onClick={handleSearch}>Search</button>
-
-//       {error ? (
-//         <div className="error">Sorry, there was an error with your search</div>
-//       ) : (
-//         <Display books={books} />
-//       )}
-//     </div>
-//   );
-// };
