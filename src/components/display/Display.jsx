@@ -1,9 +1,10 @@
 import "./Display.scss";
 
 const Display = ({ books }) => {
-  if (!books || books.length === 0) {
+  if (!books) {
     return <div>No books found.</div>;
   }
+
   return (
     <div className="display">
       {books.map((book) => (

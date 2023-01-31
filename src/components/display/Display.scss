@@ -1,8 +1,8 @@
 .display {
   display: grid;
-  gap: 2%;
+  gap: 20px;
   justify-content: center;
-  grid-template-rows: 30% 30% 30% 30%;
+  grid-template-rows: repeat(14, 560px);
   grid-template-columns: 30% 30% 30%;
 }
 
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   .display {
     grid-template-rows: max-content;
     grid-template-columns: 40% 40%;

@@ -10,7 +10,7 @@ const Search = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=${query}`
+        `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=40`
       );
       const data = await response.json();
       setBooks(data.items);
