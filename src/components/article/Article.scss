@@ -1,22 +1,27 @@
 .article {
-  width: 100vw;
-  height: 10vh;
+    width: 100vw;
+    height: 10vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: cadetblue;
-  padding: 2%;
-  p {
-    font-size: 1.2em;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    padding: 2%;
+    p {
+        font-size: 1.2em;
+    }
+
+    &__span {
+        font-weight: bold;
+        color: red;
+    }
 }
 
 @media only screen and (max-width: 550px) {
-  .article {
-    height: 14vh;
-    p {
-      font-size: 1em;
+    .article {
+        height: 14vh;
+        p {
+            font-size: 1em;
+        }
     }
-  }
 }
