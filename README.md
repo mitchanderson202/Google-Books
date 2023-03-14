@@ -1,10 +1,8 @@
 # Google Books
 
-{add test badges here, all projects you build from here on out will have tests, therefore you should have github workflow badges at the top of your repositories: [Github Workflow Badges](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)}
+<img width="943" alt="GoogleBooks" src="https://user-images.githubusercontent.com/78459081/224869084-e1e9c4eb-5d6d-4ffd-b0b5-edd3c432cede.png">
+<img width="312" alt="GoogleBooksMobile" src="https://user-images.githubusercontent.com/78459081/224869090-16871f1e-7e6a-4f51-9fd7-b3d178de7fb4.png">
 
-## Demo & Snippets
-
-Add Images
 
 ---
 
