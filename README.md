@@ -24,7 +24,6 @@
 
 ## Build Steps
 
-- Clone this Repo
 - git clone https://github.com/mitchanderson202/Google-Books
 - cd into folder
 - npm install
